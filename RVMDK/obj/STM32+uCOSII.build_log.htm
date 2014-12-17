@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+Z:\STM\SW\STM32F103-uCOSII_z\STM32F103-uCOSII\RVMDK\STM32+uCOSII.uvproj
+Project File Date:  11/28/2014
+
+<h2>Output:</h2>
+Rebuild target 'FLASH'
+compiling led.c...
+..\Source\inc\uart_printf.h(8): warning:  #1295-D: Deprecated declaration fgetc - give arg types
+  int fgetc();
+..\Source\src\led.c: 1 warning, 0 errors
+compiling main.c...
+..\Source\inc\ds18b20.h(24): warning:  #1295-D: Deprecated declaration test_DQ_clk - give arg types
+  void test_DQ_clk();
+..\Source\inc\ds18b20.h(25): warning:  #1295-D: Deprecated declaration test2_DQ_clk - give arg types
+  void test2_DQ_clk();
+..\Source\inc\uart_printf.h(8): warning:  #1295-D: Deprecated declaration fgetc - give arg types
+  int fgetc();
+..\Source\src\main.c(105): warning:  #188-D: enumerated type mixed with another type
+  bool hotplag = 0;
+..\Source\src\main.c(301): warning:  #223-D: function "DS18B20_Init" declared implicitly
+        DS18B20_Init();
+..\Source\src\main.c(299): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+..\Source\src\main.c(384): warning:  #223-D: function "sprintf" declared implicitly
+                                sprintf(cmd_buff,"%X,%X,%X,%X,%X,%X,%X,%X,%X,%X!moveLeftK %d",USART1_RecvBuff[0],\
+..\Source\src\main.c(407): warning:  #188-D: enumerated type mixed with another type
+                                                hotplag = 1;
+..\Source\src\main.c(412): warning:  #188-D: enumerated type mixed with another type
+                                                hotplag = 0;
+..\Source\src\main.c(436): warning:  #111-D: statement is unreachable
+                                                break;
+..\Source\src\main.c(449): warning:  #223-D: function "printf" declared implicitly
+                printf(cmd_buff,"%X,%X,%X,%X,%X,%X,%X,%X,%X,%X!",USART1_RecvBuff[0],\
+..\Source\src\main.c(361): warning:  #177-D: variable "i" was declared but never referenced
+        int i,j,startflag;
+..\Source\src\main.c(361): warning:  #177-D: variable "j" was declared but never referenced
+        int i,j,startflag;
+..\Source\src\main.c(95): warning:  #177-D: variable "DoorState" was declared but never referenced
+  static u16 DoorState[MaxGroupNo] = {0};
+..\Source\src\main.c: 14 warnings, 0 errors
+compiling stm32f10x_it.c...
+..\Source\inc\uart_printf.h(8): warning:  #1295-D: Deprecated declaration fgetc - give arg types
+  int fgetc();
+..\Source\src\stm32f10x_it.c: 1 warning, 0 errors
+compiling uart_printf.c...
+..\Source\inc\uart_printf.h(8): warning:  #1295-D: Deprecated declaration fgetc - give arg types
+  int fgetc();
+..\Source\src\uart_printf.c: 1 warning, 0 errors
+compiling key.c...
+compiling ds18b20.c...
+..\Source\inc\ds18b20.h(24): warning:  #1295-D: Deprecated declaration test_DQ_clk - give arg types
+  void test_DQ_clk();
+..\Source\inc\ds18b20.h(25): warning:  #1295-D: Deprecated declaration test2_DQ_clk - give arg types
+  void test2_DQ_clk();
+..\Source\src\ds18b20.c: 2 warnings, 0 errors
+compiling uart1_dma.c...
+compiling cabinet.c...
+..\Source\src\cabinet.c(279): warning:  #188-D: enumerated type mixed with another type
+        DBUS_init( DBUS_OUT );
+..\Source\src\cabinet.c(285): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_OE), 1 );//State
+..\Source\src\cabinet.c(286): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_LE), 0 );
+..\Source\src\cabinet.c(287): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Door_OE), 0 );//Door
+..\Source\src\cabinet.c(288): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Door_LE), 1 );
+..\Source\src\cabinet.c(290): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Door_LE),0);
+..\Source\src\cabinet.c(291): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Fan_OE), 0 );//Fan
+..\Source\src\cabinet.c(292): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Fan_LE), 1 );
+..\Source\src\cabinet.c(294): warning:  #188-D: enumerated type mixed with another type
+                Cabinet_GPIO_SetBit(&(mCabinetDeviec->Fan_LE),0);
+..\Source\src\cabinet.c(304): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->Door_LE),1);
+..\Source\src\cabinet.c(306): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->Door_LE),0);
+..\Source\src\cabinet.c(315): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->Fan_LE),1);
+..\Source\src\cabinet.c(317): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->Fan_LE),0);
+..\Source\src\cabinet.c(325): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_LE),1);
+..\Source\src\cabinet.c(326): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_OE),0);
+..\Source\src\cabinet.c(328): warning:  #188-D: enumerated type mixed with another type
+        DBUS_init(DBUS_IN);
+..\Source\src\cabinet.c(329): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_LE),0);
+..\Source\src\cabinet.c(331): warning:  #188-D: enumerated type mixed with another type
+        Cabinet_GPIO_SetBit(&(mCabinetDeviec->State_OE),1);
+..\Source\src\cabinet.c(332): warning:  #188-D: enumerated type mixed with another type
+        DBUS_init(DBUS_OUT);
+..\Source\src\cabinet.c: 19 warnings, 0 errors
+compiling DataFlash.c...
+compiling utils.c...
+..\Source\src\utils.c(6): warning:  #550-D: variable "i" was set but never used
+        int i;
+..\Source\src\utils.c(24): warning:  #177-D: variable "res" was declared but never referenced
+        int res = 0;
+..\Source\src\utils.c: 2 warnings, 0 errors
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_flash.c...
+compiling os_core.c...
+compiling os_flag.c...
+compiling os_mbox.c...
+compiling os_mem.c...
+compiling os_mutex.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_task.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling os_cpu_c.c...
+compiling os_dbg.c...
+assembling os_cpu_a.asm...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=18088 RO-data=592 RW-data=608 ZI-data=53976  
+FromELF: creating hex file...
+After Build - User command #1: M:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o ./Obj/STM32+uCOSII.bin ./Obj/STM32+uCOSII.axf
+".\obj\STM32+uCOSII.axf" - 0 Error(s), 40 Warning(s).
+</pre>
+</body>
+</html>
